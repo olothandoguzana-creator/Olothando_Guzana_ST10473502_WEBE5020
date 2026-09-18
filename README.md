@@ -62,6 +62,9 @@ Home → About Us / Services / Enquiry / Contact
 - Completed cross-browser testing in Google Chrome and Microsoft Edge.
 - Added testing screenshots to `testing-screenshots/`.
 
+## Part 1 Feedback Addressed
+Part 1 was reviewed before the Part 2 styling work. The project was improved by applying one shared visual identity across all five pages, strengthening semantic navigation, improving page hierarchy, adding responsive layouts and forms, introducing responsive image handling, and documenting testing evidence. These changes are recorded in the Part 2 changelog below.
+
 ## Testing Evidence
 Responsive testing was completed using Chrome Developer Tools and Microsoft Edge. The screenshots below document the tested layouts.
 
@@ -97,6 +100,8 @@ The following checks were completed:
 - Enquiry form controls remain readable on tablet and mobile.
 - The responsive design changes appropriately at the defined breakpoints.
 - The site was checked in Google Chrome and Microsoft Edge.
+- Main navigation is labelled for assistive technologies on all five pages.
+- Form fields use associated labels and required fields use HTML validation.
 
 ## Academic Content Notice
 Some organisation history, branch information, contact information and testimonials are realistic fictional placeholders for this academic project. They must be verified and approved before real-world publication.
