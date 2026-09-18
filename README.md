@@ -54,12 +54,42 @@ Home → About Us / Services / Enquiry / Contact
 - Added hover and focus states.
 - Added tablet and mobile media queries.
 - Improved typography, spacing, responsive forms and accessibility.
+- Added a responsive `<picture>` element with `srcset` and `sizes` for image optimisation.
+- Added small, medium and large original memorial image assets for responsive loading.
+- Added explicit `:active` interaction states.
+- Added `em` spacing alongside `rem` and percentage-based responsive units.
 
-## Testing
-Before final submission, capture real screenshots showing desktop, tablet and mobile views; navigation between all five pages; forms on mobile; and testing in more than one browser.
+## Testing Evidence
+The responsive code is prepared for testing. Before final submission, add your own real browser screenshots here.
+
+### Desktop
+Add a screenshot at approximately 1366px or 1440px width.
+
+### Tablet
+Use browser Developer Tools and add a screenshot at approximately 768px width.
+
+### Mobile
+Use browser Developer Tools and add a screenshot at approximately 375px or 390px width.
+
+### Functional Testing
+Confirm that:
+- Navigation opens all five pages correctly.
+- The responsive image changes appropriately across viewport sizes.
+- Service cards change from three columns to two and then one.
+- Enquiry and contact form controls remain readable on mobile.
+- Hover, focus and active states work.
+- The site has been checked in at least two browsers.
 
 ## Academic Content Notice
 Some organisation history, branch information, contact information and testimonials are realistic fictional placeholders for this academic project. They must be verified and approved before real-world publication.
 
 ## References
-Add the final Harvard-style references used for client research, CSS guidance, accessibility guidance and any external assets before submission.
+GitHub Docs (2026) *GitHub documentation*. Available at: https://docs.github.com/ (Accessed: 18 September 2026).
+
+MDN Web Docs (2026) *Responsive images*. Available at: https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/HTML_images (Accessed: 18 September 2026).
+
+MDN Web Docs (2026) *Using media queries*. Available at: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_media_queries/Using_media_queries (Accessed: 18 September 2026).
+
+Microsoft (2026) *Visual Studio Code documentation*. Available at: https://code.visualstudio.com/docs (Accessed: 18 September 2026).
+
+All memorial illustration assets in `assets/images/` were created specifically for this academic website and do not use third-party photographs.
