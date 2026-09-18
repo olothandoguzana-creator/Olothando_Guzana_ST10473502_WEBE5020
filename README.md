@@ -24,7 +24,7 @@ This repository contains a five-page responsive website prototype for Sokudela F
 - `contact.html` — Contact
 
 ## Part 2 CSS and Responsive Design
-Part 2 includes an external stylesheet, CSS reset, CSS custom properties, typography hierarchy, Flexbox navigation, CSS Grid layouts, responsive service cards, hover/focus states, responsive forms, desktop/tablet/mobile layouts, relative units, reduced-motion accessibility support, and a professional navy, cream and gold visual identity.
+Part 2 includes an external stylesheet, CSS reset, CSS custom properties, typography hierarchy, Flexbox navigation, CSS Grid layouts, responsive service cards, hover/focus/active states, responsive forms, desktop/tablet/mobile layouts, relative units, reduced-motion accessibility support, and a professional navy, cream and gold visual identity.
 
 ## Responsive Breakpoints
 - Desktop: above 900px
@@ -51,34 +51,52 @@ Home → About Us / Services / Enquiry / Contact
 - Added East London and Mdantsane branch sections.
 - Added professional multi-column footer.
 - Added Flexbox and CSS Grid layouts.
-- Added hover and focus states.
+- Added hover, focus and active interaction states.
 - Added tablet and mobile media queries.
 - Improved typography, spacing, responsive forms and accessibility.
 - Added a responsive `<picture>` element with `srcset` and `sizes` for image optimisation.
 - Added small, medium and large original memorial image assets for responsive loading.
-- Added explicit `:active` interaction states.
 - Added `em` spacing alongside `rem` and percentage-based responsive units.
+- Completed responsive testing at 768px tablet and 390px mobile widths.
+- Tested the enquiry form at tablet and mobile widths.
+- Completed cross-browser testing in Google Chrome and Microsoft Edge.
+- Added testing screenshots to `testing-screenshots/`.
 
 ## Testing Evidence
-The responsive code is prepared for testing. Before final submission, add your own real browser screenshots here.
+Responsive testing was completed using Chrome Developer Tools and Microsoft Edge. The screenshots below document the tested layouts.
 
-### Desktop
-Add a screenshot at approximately 1366px or 1440px width.
+### Tablet Homepage — 768px
+The homepage was tested at a 768px viewport. Navigation, hero content, buttons and layout remain readable and contained within the viewport.
 
-### Tablet
-Use browser Developer Tools and add a screenshot at approximately 768px width.
+![Tablet homepage at 768px](testing-screenshots/tablet-home.png)
 
-### Mobile
-Use browser Developer Tools and add a screenshot at approximately 375px or 390px width.
+### Mobile Homepage — 390px
+The homepage was tested at a 390px viewport. The navigation changes to a vertical mobile layout and the hero content resizes for the smaller screen.
+
+![Mobile homepage at 390px](testing-screenshots/mobile-home.png)
+
+### Tablet Enquiry Form — 768px
+The enquiry form was checked at tablet width to confirm that labels, input fields, the service selector and message area remain readable and correctly sized.
+
+![Tablet enquiry form at 768px](testing-screenshots/tablet%20enquiry.png)
+
+### Mobile Enquiry Form — 390px
+The enquiry form was tested at 390px. Form controls fit within the mobile viewport without horizontal overflow.
+
+![Mobile enquiry form at 390px](testing-screenshots/mobile-enquiry.png)
+
+### Cross-Browser Testing — Microsoft Edge
+The homepage was opened in Microsoft Edge to check cross-browser presentation. The navigation, typography, hero section, buttons and overall styling displayed correctly.
+
+![Microsoft Edge browser test](testing-screenshots/edge-testing.png)
 
 ### Functional Testing
-Confirm that:
-- Navigation opens all five pages correctly.
-- The responsive image changes appropriately across viewport sizes.
-- Service cards change from three columns to two and then one.
-- Enquiry and contact form controls remain readable on mobile.
-- Hover, focus and active states work.
-- The site has been checked in at least two browsers.
+The following checks were completed:
+- Navigation opens the Home, About Us, Services, Enquiry and Contact pages.
+- Responsive layouts were checked at tablet and mobile widths.
+- Enquiry form controls remain readable on tablet and mobile.
+- The responsive design changes appropriately at the defined breakpoints.
+- The site was checked in Google Chrome and Microsoft Edge.
 
 ## Academic Content Notice
 Some organisation history, branch information, contact information and testimonials are realistic fictional placeholders for this academic project. They must be verified and approved before real-world publication.
