@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://olothandoguzana-creator.github.io/Olothando_Guzana_ST10473502_WEBE5020/sitemap.xml
