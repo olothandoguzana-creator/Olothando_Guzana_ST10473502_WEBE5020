@@ -85,4 +85,64 @@ function setupForms() {
 document.addEventListener("DOMContentLoaded", () => {
   setupServiceSearch();
   setupForms();
+  function setupForms() {
+  document.querySelectorAll("form[data-sokudela-form]").forEach(form => {
+    form.addEventListener("submit", async event => {
+      event.preventDefault();
+
+      if (!form.reportValidity()) {
+        showFormMessage(form, "Please check the required fields and try again.", true);
+        return;
+      }
+
+      const submitButton = form.querySelector('[type="submit"]');
+
+      if (submitButton) {
+        submitButton.disabled = true;
+      }
+
+      try {
+        const data = Object.fromEntries(new FormData(form).entries());
+
+        const response = await fetch(
+          "https://formsubmit.co/ajax/olothandoguzana@gmail.com",
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+              "Accept": "application/json"
+            },
+            body: JSON.stringify({
+              ...data,
+              _subject: "New Sokudela Website Enquiry",
+              _template: "table"
+            })
+          }
+        );
+
+        const result = await response.json();
+
+        if (!response.ok ||
+            String(result.success).toLowerCase() !== "true") {
+          throw new Error("Submission failed");
+        }
+
+        showFormMessage(form, "Thank you! Your message has been submitted successfully.");
+        form.reset();
+
+      } catch (error) {
+        showFormMessage(form, "Your message could not be sent. Please try again.", true);
+
+      } finally {
+        if (submitButton) {
+          submitButton.disabled = false;
+        }
+      }
+    });
+  });
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  setupServiceSearch();
+  setupForms();
 });
