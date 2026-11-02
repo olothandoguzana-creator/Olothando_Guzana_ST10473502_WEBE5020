@@ -116,3 +116,50 @@ MDN Web Docs (2026) *Using media queries*. Available at: https://developer.mozil
 Microsoft (2026) *Visual Studio Code documentation*. Available at: https://code.visualstudio.com/docs (Accessed: 18 September 2026).
 
 All memorial illustration assets in `assets/images/` were created specifically for this academic website and do not use third-party photographs.
+
+
+## Task 3 — Dynamic Content, SEO and Form Functionality
+
+### Dynamic Content
+- Added JavaScript-driven service cards on the Services page.
+- Added live keyword filtering across service names, categories and descriptions.
+- Added A–Z and Z–A sorting options.
+- Added an accessible empty-state message when no service matches the search.
+
+### Search Engine Optimisation
+- Added unique meta descriptions to all five pages.
+- Reviewed semantic headings, descriptive image alt text and internal navigation.
+- Added `robots.txt` and `sitemap.xml` for the GitHub Pages deployment.
+- Local search phrases include funeral services, funeral planning, burial arrangements, cremation support, Eastern Cape, East London and Mdantsane.
+- Off-page SEO such as backlinks and social promotion requires genuine external partners/accounts and is not claimed as completed.
+
+### Forms and Validation
+- Added JavaScript client-side form handling and accessible status messages.
+- Added phone-number patterns, text-length constraints and autocomplete attributes.
+- The enquiry form displays an on-page acknowledgement and explains that prices and availability require direct confirmation.
+- The contact form compiles entered details into a pre-addressed email using the visitor's email application.
+- The contact recipient is a fictional `.example` placeholder and must be replaced with a verified organisation email before real-world launch.
+- Live AJAX email delivery requires a verified recipient and configured form service; this academic prototype does not claim that a message has been delivered.
+
+### Task 3 Changelog
+- Added `assets/js/script.js` for dynamic service rendering, filtering, sorting and form interaction.
+- Added search and sorting controls to `services.html`.
+- Added unique SEO meta descriptions to all five pages.
+- Added `robots.txt` and `sitemap.xml`.
+- Improved form constraints, accessible feedback messages and contact email preparation.
+- Extended the stylesheet for service search controls and form feedback states.
+
+### Task 3 Testing
+- Search services using terms such as “burial”, “transport” and “memorial”.
+- Verify A–Z and Z–A sorting.
+- Submit empty and valid forms to confirm browser and JavaScript validation.
+- Confirm the enquiry response explains that pricing and availability are not live.
+- Confirm the contact email draft contains the entered contact details. Actual sending requires a verified recipient.
+- Re-test all pages at desktop, tablet and mobile widths after deployment.
+
+### Updated References
+- Google Search Central (n.d.) *SEO Starter Guide*. Available at: https://developers.google.com/search/docs/fundamentals/seo-starter-guide (Accessed: 2 November 2026).
+- MDN Web Docs (n.d.) *HTML forms*. Available at: https://developer.mozilla.org/en-US/docs/Learn_web_development/Forms (Accessed: 2 November 2026).
+- MDN Web Docs (n.d.) *Fetch API*. Available at: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API (Accessed: 2 November 2026).
+- Sitemaps.org (n.d.) *Sitemaps XML format*. Available at: https://www.sitemaps.org/protocol.html (Accessed: 2 November 2026).
+- GitHub Docs (n.d.) *About GitHub Pages*. Available at: https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages (Accessed: 2 November 2026).
