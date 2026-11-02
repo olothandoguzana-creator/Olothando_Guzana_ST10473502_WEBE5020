@@ -27,3 +27,11 @@ form{background:#fff;padding:2rem;border:1px solid var(--line);box-shadow:var(--
 @media(max-width:900px){.service-grid,.testimonial-grid{grid-template-columns:repeat(2,1fr)}.about-grid,.two-col,.form-layout{grid-template-columns:1fr}.value-grid{grid-template-columns:repeat(2,1fr)}.footer-grid{grid-template-columns:repeat(2,1fr)}.image-panel{min-height:380px}}
 @media(max-width:700px){.site-header{position:static}.navbar{align-items:flex-start;flex-direction:column;padding:1rem 0}nav{width:100%}nav ul{flex-direction:column;align-items:stretch}nav a{width:100%}.hero{min-height:590px}.hero::after{width:220px;height:220px;font-size:8rem;right:-70px}.hero-content{padding:4rem 0}.trust-grid,.service-grid,.testimonial-grid,.branch-grid,.value-grid,.footer-grid{grid-template-columns:1fr}.trust-grid>div{border-right:0;border-bottom:1px solid rgba(255,255,255,.1);padding:1rem 0}.section,.about-feature,.branches{padding:4rem 0}.image-panel{min-height:300px}.cta-box,.footer-bottom{flex-direction:column;align-items:flex-start}form{padding:1.3rem}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important}}
+
+/* Task 3 additions */
+.service-tools{display:grid;grid-template-columns:auto minmax(180px,1fr) auto minmax(150px,.6fr);gap:.75rem;align-items:center;margin:0 0 1.5rem;padding:1rem;background:#fff;border:1px solid var(--line)}
+.service-tools label{margin:0}
+.form-message{margin-top:1rem;padding:.8rem;border-radius:4px;font-size:.95rem}
+.form-success{background:#edf7ee;border-left:4px solid #3b8050;color:#205a32}
+.form-error{background:#fff0ef;border-left:4px solid #b33a32;color:#85251f}
+@media(max-width:700px){.service-tools{grid-template-columns:1fr}.service-tools label{margin-top:.35rem}}
